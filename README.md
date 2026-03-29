@@ -1,44 +1,123 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎧 Graph-Based Music Recommendation System
 
-In this project, we merge the Last.fm and Spotify datasets and use a random-walk on a Hypergraph to create a Graph-based Music Recommendation system, which we then visualize with Java's D3 library. For more information on the Hypergraph and random walk algorithm, please see the report.
+A **Graph-based Music Recommendation System** that combines data from **Last.fm** and **Spotify**, and applies a **Random Walk on Hypergraph** approach to generate intelligent music recommendations.
 
-## Getting Started
+The system is built with **Next.js** for the frontend and includes **interactive visualization using D3.js** to explore relationships between users, artists, and tracks.
 
-First, clone the repo.
+---
 
-Then, run the development server:
+## 🚀 Features
 
-```bash
-cd spotify-vis
-npm install
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+* 🔗 Combines **Last.fm + Spotify datasets**
+* 🧠 Uses **Hypergraph-based modeling**
+* 🔄 Implements **Random Walk algorithm** for recommendations
+* 📊 Interactive **graph visualization (D3.js)**
+* ⚡ Built with **Next.js (React Framework)**
+* 🌐 API routes for backend logic
+
+---
+
+## 🏗️ Tech Stack
+
+* **Frontend:** Next.js, React, TypeScript
+* **Visualization:** D3.js
+* **Backend:** Next.js API Routes
+* **Data Processing:** Python (for graph + preprocessing)
+* **Datasets:** Last.fm, Spotify
+
+---
+
+## 📂 Project Structure
+
+```
+├── data/                  # Dataset files
+├── data-collection/       # Scripts for collecting data
+├── Graph/                 # Graph construction logic
+├── public/                # Static assets
+├── src/                  # Main frontend source code
+├── pages/api/             # API routes
+├── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+###  the development server
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Open 👉 http://localhost:3000
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧠 How It Works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. 🎵 Merge datasets from **Spotify & Last.fm**
+2. 🔗 Construct a **Hypergraph**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   * Nodes: Users, Artists, Tracks
+   * Hyperedges: Relationships between them
+3. 🚶 Apply **Random Walk algorithm**
 
-## Deploy on Vercel
+   * Traverse graph to find relevant recommendations
+4. 📊 Visualize using **D3.js**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   * Interactive exploration of recommendations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## 📡 API Endpoints
+
+Example:
+
+```
+/api/hello
+```
+
+You can modify APIs inside:
+
+```
+pages/api/
+```
+
+---
+
+## 🖥️ Visualization
+
+* Interactive graph representation of music relationships
+* Shows connections between:
+
+  * Users 👤
+  * Artists 🎤
+  * Songs 🎶
+
+---
+
+## 📘 Learn More
+
+* [Next.js Documentation](https://nextjs.org/docs)
+* [D3.js Documentation](https://d3js.org/)
+* Hypergraph & Random Walk → Refer to project report
+
+---
+
+## 🚀 Deployment
+
+The easiest way to deploy:
+
+👉 Use **Vercel**
+
+```
+npm run build
+npm start
+```
