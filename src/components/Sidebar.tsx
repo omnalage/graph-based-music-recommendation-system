@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "";
+
 export default function Sidebar(props: any) {
     const [recommendations, setRecommendations] = useState<string[]>([]);
     const [loading, setLoading] = useState(false);
@@ -18,7 +20,8 @@ export default function Sidebar(props: any) {
             setError(null);
             setShowRecs(true);
             
-            const response = await fetch(`/api/recommendations?song=${encodeURIComponent(song)}`);
+            const apiUrl = API_BASE ? `${API_BASE.replace(/\/$/, "")}/recommend?song=${encodeURIComponent(song)}` : `/api/recommendations?song=${encodeURIComponent(song)}`;
+            const response = await fetch(apiUrl);
             const data = await response.json();
             
             if (data.error) {
