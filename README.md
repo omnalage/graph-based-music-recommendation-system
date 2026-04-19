@@ -6,7 +6,7 @@ The system is built with **Next.js** for the frontend and includes **interactive
 
 ---
 # Full-view of platform
-[[skill-exchangeplatform.vercel.app](https://skill-exchangeplatform.vercel.app/)](https://music-recommendation-frontend-murex.vercel.app/)
+➡️ [music-recommendation-frontend-murex.vercel.app](https://music-recommendation-frontend-murex.vercel.app/)
 ## 🚀 Features
 
 * 🔗 Combines **Last.fm + Spotify datasets**
