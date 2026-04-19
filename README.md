@@ -5,7 +5,8 @@ A **Graph-based Music Recommendation System** that combines data from **Last.fm*
 The system is built with **Next.js** for the frontend and includes **interactive visualization using D3.js** to explore relationships between users, artists, and tracks.
 
 ---
-
+# Full-view of platform
+skill-exchangeplatform.vercel.app
 ## 🚀 Features
 
 * 🔗 Combines **Last.fm + Spotify datasets**
